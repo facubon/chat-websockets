@@ -62,10 +62,8 @@ Swal.fire({
 
   //Darkmode
 
-  const botonswitch = document.querySelector ('#switch');
+  const toggleButton = document.getElementById('toggle-button')
 
-  botonswitch.addEventListener ('click', ()=> {
-    document.body.classList.toggle('dark');
-    botonswitch.classList.toggle('active');
-
+  toggleButton.addEventListener('change', () => {
+    document.body.classList.toggle('dark')
   })
